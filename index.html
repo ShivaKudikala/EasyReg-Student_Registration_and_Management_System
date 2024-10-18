@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyReg: Student Registration and Management System</title>
+    <meta name="description" content="A dynamic student registration system that allows users to add, edit, and delete student records, with data persistence using local storage.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+</head>
+<body>
+
+    <!-- *******************Header Section(For Title and Description**************** -->
+    <header>
+        <div>
+            <h1>EasyReg : Student Registration and Management System</h1>
+            <p>Welcome to EasyReg, a user-friendly platform designed to streamline student registration. 
+                Easily register student details like name, student ID, contact information, and more. 
+                This system allows you to manage student records efficiently, with options to add, edit, and delete entries. 
+                Stay organized and keep track of students' information with ease.
+            </p>
+        </div>
+
+    </header>
+
+    <main>
+        
+        <!-- ***********************Student Registration Form******************* -->
+
+        <section id="Reg-form">
+            <p class="heading-text">Add Student</p>
+            <form action="">
+                <input type="text" id="StudentName" placeholder="Student Name*">
+
+                <input type="number" id="StudentID" placeholder="Student ID*">
+
+                <input type="email" id="StudentEmail" placeholder="Email*">
+
+                <input type="tel" id="StudentContact" placeholder="Contact No.*">
+
+                <button class="submit-btn" id="submit-btn">ADD</button>
+            </form>
+        </section>
+
+        <!-- *********************Display Section********************** -->
+        <section class="info">
+            <div>
+                <p class="heading-text">Registered Students</p>
+                <div class="table-body-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Student ID</th>
+                                <th>Email</th>
+                                <th>Contact</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/ace65165e8.js" crossorigin="anonymous"></script>
+</body>
+</html>
